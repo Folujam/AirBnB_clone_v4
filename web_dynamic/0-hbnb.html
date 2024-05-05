@@ -74,5 +74,12 @@
     <footer>
       <p>Holberton School</p>
     </footer>
+	<script>
+		const linkTags = document.querySelectorAll('link');
+		  linkTags.forEach(function () {
+			const href = linkTags.getAttribute('href');
+			linkTags.setAttribute('href', href + cache_id);
+		  });
+	</script>
   </body>
 </html>
